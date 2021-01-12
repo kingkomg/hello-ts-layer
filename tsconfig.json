@@ -1,18 +1,13 @@
 {
-  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "module": "commonjs",
     "removeComments": true,
-    "sourceMap": true,
-    "target": "ESNext",
-    "outDir": "lib"
+    "target": "ES2015",
+    "outDir": "hello_ts_layer/node_modules/hello_ts_layer/."
   },
   "include": ["src/**/*.ts"],
   "exclude": [
-    "node_modules/**/*",
+    "node_modules",
     ".serverless/**/*",
     ".webpack/**/*",
     "_warmup/**/*",
